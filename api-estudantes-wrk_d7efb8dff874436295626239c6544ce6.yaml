@@ -1,0 +1,154 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: api-estudantes
+meta:
+  id: wrk_d7efb8dff874436295626239c6544ce6
+  created: 1793070840546
+  modified: 1793070840546
+  description: ""
+collection:
+  - url: http://localhost:8080/api/estudantes
+    name: cadastrar
+    meta:
+      id: req_e71a2aa5ce524b5a8287145784b69cae
+      created: 1793070922296
+      modified: 1793071144288
+      isPrivate: false
+      description: ""
+      sortKey: -1793070922296
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+         "id": "1",
+         "nome": "João da Silva",
+         "idade": 30,
+         "email": "joao.silva@email.com"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/estudantes/1
+    name: editar
+    meta:
+      id: req_8b6f704ad4ab422ca4fa944563e99ec4
+      created: 1793071067245
+      modified: 1793071234737
+      isPrivate: false
+      description: ""
+      sortKey: -1793071067245
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+         "id": "1",
+         "nome": "João da Silva",
+         "idade": 30,
+         "email": "joaosilva@email.com"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/estudantes/2
+    name: deletar
+    meta:
+      id: req_3907498f73e24635b23c889ea830c242
+      created: 1793071071463
+      modified: 1793071206398
+      isPrivate: false
+      description: ""
+      sortKey: -1793071071463
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/estudantes
+    name: buscar-todos
+    meta:
+      id: req_ad6e9b40e31d4ccfa3175185f663843e
+      created: 1793071072858
+      modified: 1793071202330
+      isPrivate: false
+      description: ""
+      sortKey: -1793071072858
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/estudantes/1
+    name: buscar-id
+    meta:
+      id: req_e028170ac5c14297acbf64563993d9d7
+      created: 1793071074294
+      modified: 1793071199779
+      isPrivate: false
+      description: ""
+      sortKey: -1793071074294
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_d61524dee25fe6aaa68fe6fcbe6d8968d8cd35b7
+    created: 1793070840551
+    modified: 1793070840551
+environments:
+  name: Base Environment
+  meta:
+    id: env_d61524dee25fe6aaa68fe6fcbe6d8968d8cd35b7
+    created: 1793070840549
+    modified: 1793070840549
+    isPrivate: false

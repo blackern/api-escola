@@ -1,0 +1,154 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: api-professores
+meta:
+  id: wrk_9722ffaf2e8647f6a87bb0645bf65c77
+  created: 1793071395764
+  modified: 1793071395764
+  description: ""
+collection:
+  - url: http://localhost:8080/api/professores
+    name: cadastrar
+    meta:
+      id: req_32831d86ba98487098a8e8b7df770bd8
+      created: 1793070922296
+      modified: 1793071706606
+      isPrivate: false
+      description: ""
+      sortKey: -1793070922296
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+         "id": "2",
+         "nome": "Luisa Professora",
+         "idade": 37,
+         "email": "luisaprofessora@email.com"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/professores/1
+    name: editar
+    meta:
+      id: req_c62dc0e12e434fdea648ef33c62fd13c
+      created: 1793071067245
+      modified: 1793071717867
+      isPrivate: false
+      description: ""
+      sortKey: -1793071067245
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+         "id": "1",
+         "nome": "Luis Professor",
+         "idade": 67,
+         "email": "luisprofessor@email.com"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/professores/2
+    name: deletar
+    meta:
+      id: req_3f0993f26b324323a329b85fc7c9bc01
+      created: 1793071071463
+      modified: 1793071733660
+      isPrivate: false
+      description: ""
+      sortKey: -1793071071463
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/professores
+    name: buscar-todos
+    meta:
+      id: req_5675f4a5f5a2410cae53a5c17998dcd3
+      created: 1793071072858
+      modified: 1793071711496
+      isPrivate: false
+      description: ""
+      sortKey: -1793071072858
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/professores/1
+    name: buscar-id
+    meta:
+      id: req_8af4df5b7faf4613960bf24fdf876fee
+      created: 1793071074294
+      modified: 1793071569159
+      isPrivate: false
+      description: ""
+      sortKey: -1793071074294
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_5583f57a10e2494ab43fb2dae54758e8
+    created: 1793070840551
+    modified: 1793070840551
+environments:
+  name: Base Environment
+  meta:
+    id: env_af3a3ea298784dbdb018fa2f9113e327
+    created: 1793070840549
+    modified: 1793070840549
+    isPrivate: false
